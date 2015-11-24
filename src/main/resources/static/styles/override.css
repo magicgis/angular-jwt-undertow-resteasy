@@ -1,0 +1,85 @@
+.hightlightLink {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.borderless > tbody > tr > td {
+    border: none;
+    border-top: none; 
+}
+div.padded {  
+      padding-top: 1px;  
+      padding-right: 10px;  
+      padding-bottom: 5px;  
+      padding-left: 16px;  
+}
+div.pad8 {
+	padding-top: 8px;  
+	padding-right: 0px;  
+	padding-bottom: 8px;  
+	padding-left: 0px;  
+}
+div.pad2px {
+	padding-top: 2px;  
+	padding-right: 2px;  
+	padding-bottom: 2px;  
+	padding-left: 2px;  
+}
+.app-modal-window .modal-dialog {
+  width: 740px;
+}
+
+.error {
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #C33;
+}
+.right {
+	float: right;
+}
+.borderThinGray {
+	outline: 1px solid #CCCCCC;
+}
+
+.selectLarge {
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+   -webkit-appearance: button;
+   -webkit-border-radius: 2px;
+   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   -webkit-padding-end: 10px;
+   -webkit-padding-start: 8px;
+   -webkit-user-select: none;
+   background-position: 96% center;
+   background-repeat: no-repeat;
+   border: 1px solid #AAA;
+   color: #555;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 215px;
+}
+
+.topPad12 {
+	margin-top: 12px;
+}
+div.leftPad10 {
+	padding-left: 18px;
+	padding-bottom: 6px;
+}
+div.leftPad18 {
+	padding-left: 18px;
+}
+.sms-sidebar > li > a {
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #c0bbb7;
+	display: block;
+	font-weight: 400;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-right: 20px;
+	padding-left: 20px;
+}

@@ -1,0 +1,13 @@
+<div>
+    <form name="myForm">
+        <p className="bucketName">
+            <input name="username" type="text"     required className="form-input" placeholder="username" ng-model="username" />
+        </p>
+        <p className="fileKey">
+            <input name="password" type="password" required className="form-input" placeholder="password" ng-model="password" />
+        </p>
+        <div className="submit">
+            <button id="button-blue" ng-disabled="!myForm.$valid" ng-click="login()">Login</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Minimal AngularJS App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/app.css" />
+    <link rel="stylesheet" href="styles/simple-sidebar.css" />
+    <link rel="stylesheet" href="styles/override.css"/>
+</head>
+<body >
+
+<div id="wrapper" ng-controller="mainPageCtrl">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" ng-controller="mainSidebarCtrl">
+
+        <br />
+        <ul class="nav sms-sidebar leftPad10">
+
+            <li><a ng-init="m1Collapsed=false" href="" ng-click="m1Collapsed=!m1Collapsed">Menu 1</a></li>
+            <li ng-hide="m1Collapsed">
+                <a href="#/main">&nbsp; &nbsp; Sub Menu 1 - Main</a>
+                <a href="#/p2">&nbsp; &nbsp; Sub Menu 2 - P2</a>
+            </li>
+            <li><a href="#/p2" >Menu 2 - P2</a></li>
+            <li><a ng-init="m4Collapsed=true" href="" ng-click="m4Collapsed=!m4Collapsed">Menu 4</a></li>
+            <li ng-hide="m4Collapsed">
+                <a href="#/p2">&nbsp; &nbsp; Sub Menu 1 - P2</a>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <div ui-view></div>
+    </div>
+
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  
+  <script src="app.js"></script>
+  <script src="app-ui-router.js"></script>
+  <script src="modules/login/login.js"></script>
+  <script src="modules/main/main.js"></script>
+  <script src="modules/p2/p2.js"></script>
+</body>
+</html>
